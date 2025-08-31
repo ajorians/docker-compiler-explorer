@@ -13,8 +13,22 @@ RUN zypper refresh && \
     zypper install -y rsync && \
     echo "Installing make used to set things up" && \
     zypper install -y make && \
-    echo "Installing GCC15; can install much more" && \
+    echo "Installing GCC7" && \
+    zypper install -y gcc7 gcc7-c++ && \
+    echo "Installing GCC13" && \
+    zypper install -y gcc13 gcc13-c++ && \
+    echo "Installing GCC14" && \
+    zypper install -y gcc14 gcc14-c++ && \
+    echo "Installing GCC15" && \
     zypper install -y gcc15 gcc15-c++ && \
+    echo "Installing Clang15" && \
+    zypper install -y clang15 && \
+    echo "Installing clang18" && \
+    zypper install -y clang18 && \
+    echo "Installing clang19" && \
+    zypper install -y clang19 && \
+    echo "Installing clang20" && \
+    zypper install -y clang20 && \
     echo "Installing NodeJS to setup compiler-explorer" && \
     zypper install -y nodejs22 && \
     echo "Installing NPM to setup compiler-explorer" && \
