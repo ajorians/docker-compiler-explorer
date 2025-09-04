@@ -16,3 +16,8 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "10240:10240" # Host:container port
+
+Included is a docker-compose.yml file which you can do:
+docker compose up -d
+
+Hope that help!
